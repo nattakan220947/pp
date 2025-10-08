@@ -1,0 +1,183 @@
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  color: #444;
+  line-height: 1.6;
+  
+}
+
+/* eader & Title  */
+h1 {
+  background: linear-gradient(120deg, #e2dbdb, #d4d0d0);
+  color: #222;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 12px 12px 0 0;
+  transition: transform 0.3s ease;
+}
+h1:hover {
+  transform: scale(1.02) rotate(-1deg);
+}
+
+/*  Navigation Bar  */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  background: #bbc7d2;
+  border-bottom: 1px solid #eee;
+  border-radius: 0 0 12px 12px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #e5e5e5;
+  color: #111;
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* Sections  */
+section {
+  margin: 20px auto;
+  padding: 20px;
+  background: linear-gradient(180deg, #fff, #f9f9f9);
+  border-radius: 12px;
+  max-width: 800px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.1);
+}
+
+/* รูปโปรไฟล์ */
+.profile-img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 12px;
+  max-width: 200px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-img:hover {
+  transform: rotate(-2deg) scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.2);
+}
+
+/* กล่องรูปหนัง */
+.movie-list {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  justify-content: flex-start;
+}
+
+.movie-list img {
+  width: 120px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.movie-list img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+/*Project Layout  */
+.project-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Project card */
+.project-card {
+  background: #eeecec;
+  border-radius: 16px;
+  padding: 25px 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+.project-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  border-left: 4px solid #5a6ba5;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+/* Project title */
+.project-card h2 {
+  font-size: 20px;
+  color: #222;
+  margin: 0 0 10px;
+  font-weight: 600;
+  position: relative;
+}
+.project-card h2::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #5a6ba5;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s ease;
+}
+.project-card h2:hover::after {
+  width: 100%;
+}
+
+/* Description */
+.project-card p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Link */
+.project-card a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #242f48;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.project-card a:hover {
+  color: #656a7b;
+  text-decoration: underline;
+  transform: scale(1.03);
+}
+
+/*  Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #fdfdfd;
+  margin-top: 40px;
+  font-size: 13px;
+  color: #777;
+  position: relative;
+}
+footer::before {
+  content: "💡 ";
+}
